@@ -120,3 +120,8 @@ article {
     margin-left: 4%;
     text-align: left;
 }
+.project-link {
+    text-decoration: none;
+    display: flex;
+    color: rgb(57, 49, 32);
+}
