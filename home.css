@@ -38,6 +38,7 @@ nav {
 .home {
     margin-top: 2%;
     background-color: rgb(243, 236, 223);
+    background-size: auto;
     left: 0;
     right: 0;
 }
@@ -80,7 +81,7 @@ nav {
 /* ----------ARTICLE---------- */
 .main-content {
     margin: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     left: 0;
     right: 0;
 }
@@ -94,8 +95,9 @@ article {
 }
 .article-title {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     margin: 50px 0 30px;
+    color: rgb(63,87,55);
 }
 
 .project-container {
@@ -106,22 +108,96 @@ article {
     margin: 10px;
     border-bottom: 10px solid #B96F4D;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    justify-content: center;
     box-shadow: 0 0 10px gainsboro;
 }
-.project-title a {
+.project-title {
     color: rgb(71, 61, 41);
     text-decoration: none;
 }
-.project-description a {
+.project-description {
     color: rgb(57, 49, 32);
     text-decoration: none;
-    margin-left: 4%;
-    text-align: left;
+    text-align: center;
 }
 .project-link {
     text-decoration: none;
     display: flex;
     color: rgb(57, 49, 32);
+    flex: 1;
+}
+
+/* RESPONSIVE */
+@media(max-width : 930px) {
+    * {
+        font-size: 2.5vw;
+        padding: 0px;
+        margin: 0px;
+    }
+    main {
+        margin-top: 40px;
+    }
+    .mini-text-flex {
+        font-size: 2vw;
+    }
+    .main-title {
+        font-size: 5vw;
+        padding-bottom: 10px;
+    }
+    .article-title {
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    .project-container {
+
+    }
+    .project-container img{
+        width: 120px;
+        height: 84px;
+    }
+    .project-title {
+        font-size: 1.5vw;
+    }
+    .project-description {
+    font-size: 1.5vw;
+    text-align: center;
+    }
+}
+
+@media(max-width : 1220px) {
+    * {
+        font-size: 2.5vw;
+        padding: 0px;
+        margin: 0px;
+    }
+    main {
+        margin-top: 40px;
+    }
+    .mini-text-flex {
+        font-size: 2vw;
+    }
+    .main-title {
+        font-size: 5vw;
+        padding-bottom: 10px;
+    }
+    .article-title {
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    .project-container {
+
+    }
+    .project-container img{
+        width: 120px;
+        height: 84px;
+    }
+    .project-title {
+        font-size: 1.5vw;
+    }
+    .project-description {
+    font-size: 1.5vw;
+    text-align: center;
+    }
 }
