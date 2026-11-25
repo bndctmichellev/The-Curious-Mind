@@ -1,0 +1,55 @@
+/* HEADER */
+.main-header {
+    background-color: rgb(219, 207, 185);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    /* bottom: 0; */
+    height: 50px;
+    /* add s-index after adding slider to see the difference */
+    z-index: 100;
+    /* box-shadow: 0px 0px 50px gainsboro; */
+}
+.main-header a{
+    /* text project, contact, abt us in right */
+   text-decoration: none;
+   color: rgb(63, 87, 55);
+   padding: 10px;
+   font-weight: bold;
+   /* float: left; */
+}
+.title {
+    text-align: left;
+   color: rgb(63, 87, 55);
+   position: absolute;
+   /* left: 10px; */
+   padding: 0;
+   /* width: px; */
+   margin: 14px 30px 0px;
+}
+nav {
+   position: absolute;
+   right: 0;
+   margin: 14px 30px 0px;
+   /* display: flex; */
+}
+
+
+/* FONTS */
+/* Main text */
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+/* Logo */
+.logo {
+    font-family: 'Playfair Display', serif;
+}
+/* Navigation */
+nav, h4 {
+    font-family: 'DM Sans', sans-serif;
+}

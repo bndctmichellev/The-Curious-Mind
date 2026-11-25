@@ -121,6 +121,7 @@ article {
     color: rgb(57, 49, 32);
     text-decoration: none;
     text-align: center;
+    font-size: 1.1vw;
 }
 .project-link {
     text-decoration: none;
@@ -161,7 +162,7 @@ article {
         font-size: 1.5vw;
     }
     .project-description {
-    font-size: 1.5vw;
+    font-size: 1vw;
     text-align: center;
     }
 }
@@ -200,4 +201,24 @@ article {
     font-size: 1.5vw;
     text-align: center;
     }
+}
+
+/* Main text */
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Logo */
+.logo {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navigation */
+nav, h4 {
+    font-family: 'DM Sans', sans-serif;
 }

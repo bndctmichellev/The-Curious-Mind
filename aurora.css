@@ -1,0 +1,116 @@
+/* HEADER */
+.main-header {
+    background-color: rgb(173, 183, 155);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    /* bottom: 0; */
+    height: 50px;
+    /* add s-index after adding slider to see the difference */
+    z-index: 100;
+    /* box-shadow: 0px 0px 50px gainsboro; */
+}
+.main-header a{
+    /* text project, contact, abt us in right */
+   text-decoration: none;
+   color: #3a4e3f;
+   padding: 10px;
+   font-weight: bold;
+   /* float: left; */
+}
+.title {
+    text-align: left;
+   color: rgb(63, 87, 55);
+   position: absolute;
+   /* left: 10px; */
+   padding: 0;
+   /* width: px; */
+   margin: 14px 30px 0px;
+}
+nav {
+   position: absolute;
+   right: 0;
+   margin: 14px 30px 0px;
+   /* display: flex; */
+}
+
+
+.article-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    align-items: start;
+}
+.table-of-contents {
+    position: sticky;
+    top: 100px;
+    /* background: #E9DDC9; */
+    padding: 20px;
+    border-radius: 10px;
+}
+.table-of-contents ul {
+    list-style: none;
+    padding: 0;
+}
+.table-of-contents li {
+    margin: 15px 0;
+}
+.table-of-contents a {
+    color: #354638;
+    text-decoration: none;
+}
+.table-of-contents a:hover {
+    color: #B96F4D;
+}
+
+/* MAIN ARTICLE */
+.article-content {
+    min-width: 0;
+    line-height: 1.8;
+}
+.article-image {
+    /* float: left; */
+    width: 220px;
+    height: 150px;
+    margin: 0 25px 15px 0;
+    border-radius: 5px;
+    display: block;
+    object-fit: cover;
+}
+.article-imageptr {
+    width: 150px;
+    height: 220px;
+    margin: 0 25px 15px 0;
+    border-radius: 5px;
+    display: block;
+    object-fit: cover;
+}
+.image-text-row {
+  display: flex;
+  align-items: flex-start; /* Teks mulai sejajar dari bagian atas gambar */
+  /* gap: 20px;               Jarak antara gambar dan teks di kanannya */
+  margin-bottom: 25px;
+}
+
+/* FONTS */
+/* Main text */
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #eaf0ec;
+}
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+/* Logo */
+.logo {
+    font-family: 'Playfair Display', serif;
+}
+/* Navigation */
+nav, h4 {
+    font-family: 'DM Sans', sans-serif;
+}
