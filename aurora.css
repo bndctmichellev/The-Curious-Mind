@@ -1,6 +1,6 @@
 /* HEADER */
 .main-header {
-    background-color: rgb(173, 183, 155);
+    background-color: rgb(155, 166, 183);
     position: fixed;
     right: 0;
     left: 0;
@@ -14,7 +14,7 @@
 .main-header a{
     /* text project, contact, abt us in right */
    text-decoration: none;
-   color: #3a4e3f;
+   color: #3a3d4e;
    padding: 10px;
    font-weight: bold;
    /* float: left; */
@@ -39,7 +39,7 @@ nav {
 .article-layout {
     display: grid;
     grid-template-columns: 220px 1fr;
-    gap: 50px;
+    gap: 20px;
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
@@ -47,10 +47,11 @@ nav {
 }
 .table-of-contents {
     position: sticky;
-    top: 100px;
+    top: 20px;
     /* background: #E9DDC9; */
     padding: 20px;
     border-radius: 10px;
+    overflow-y: auto;
 }
 .table-of-contents ul {
     list-style: none;
@@ -60,7 +61,7 @@ nav {
     margin: 15px 0;
 }
 .table-of-contents a {
-    color: #354638;
+    color: #3a3d4e;
     text-decoration: none;
 }
 .table-of-contents a:hover {
@@ -81,14 +82,14 @@ nav {
     display: block;
     object-fit: cover;
 }
-.article-imageptr {
+/* .article-imageptr {
     width: 150px;
     height: 220px;
     margin: 0 25px 15px 0;
     border-radius: 5px;
     display: block;
     object-fit: cover;
-}
+} */
 .image-text-row {
   display: flex;
   align-items: flex-start; /* Teks mulai sejajar dari bagian atas gambar */
@@ -100,17 +101,53 @@ nav {
 /* Main text */
 body {
     font-family: 'DM Sans', sans-serif;
-    background-color: #eaf0ec;
+    background-color: #eaebf0;
 }
 /* Headings */
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
+    color: #3b4160;
 }
 /* Logo */
 .logo {
     font-family: 'Playfair Display', serif;
 }
 /* Navigation */
-nav, h4 {
+nav, h4, p, li {
     font-family: 'DM Sans', sans-serif;
+    color: #282e4b;
+}
+.sub-table {
+    font-size: 1vw;
+    color: #282e4b;
+}
+
+@media (max-width: 1220px)  {
+    .article-image {
+        max-width: 120px;
+        max-height: 75px;
+    }
+    h1, h2, h3 {
+        font-size: 2vw;
+    }
+    nav, h4, p, li {
+        font-size: 1.5vw;
+    }
+}
+@media (max-width: 620px) {
+    .table-of-contents{
+        /* color: red; */
+        width: 100px;
+    }
+    .article-layout {
+        grid-template-columns: 30vw 1fr;
+        gap: 0px;
+    }
+    .article-image {
+        max-width: 75px;
+        max-height: 40px;
+    }
+    .main-header {
+        height: 7vw;
+    }
 }
