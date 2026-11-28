@@ -1,6 +1,6 @@
 /* HEADER */
 .main-header {
-    background-color: rgb(219, 207, 185);
+    background-color: #3E4E3C;
     position: fixed;
     right: 0;
     left: 0;
@@ -14,14 +14,14 @@
 .main-header a{
     /* text project, contact, abt us in right */
    text-decoration: none;
-   color: rgb(63, 87, 55);
+   color: #FBF9F5;
    padding: 10px;
    font-weight: bold;
    /* float: left; */
 }
 .title {
     text-align: left;
-   color: rgb(63, 87, 55);
+   color: #FBF9F5;
    position: absolute;
    /* left: 10px; */
    padding: 0;
@@ -36,20 +36,121 @@ nav {
 }
 
 
+/* TABLE OF CONTENT */
+.article-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    align-items: start;
+}
+.table-of-contents {
+    position: sticky;
+    top: 20px;
+    /* background: #E9DDC9; */
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+.table-of-contents ul {
+    list-style: none;
+    padding: 0;
+}
+.table-of-contents li {
+    margin: 15px 0;
+}
+.table-of-contents a {
+    color: #3a4232;
+    text-decoration: none;
+}
+.table-of-contents a:hover {
+    color: #B96F4D;
+}
+
+/* MAIN ARTICLE */
+.article-content {
+    min-width: 0;
+    line-height: 1.8;
+}
+.article-image {
+    /* float: left; */
+    /* width: 220px; */
+    height: 300px;
+    margin: 0 25px 15px 0;
+    border-radius: 5px;
+    display: block;
+    object-fit: cover;
+}
+/* .article-imageptr {
+    width: 150px;
+    height: 220px;
+    margin: 0 25px 15px 0;
+    border-radius: 5px;
+    display: block;
+    object-fit: cover;
+} */
+.image-text-row {
+  display: flex;
+  align-items: flex-start; /* Teks mulai sejajar dari bagian atas gambar */
+  /* gap: 20px;               Jarak antara gambar dan teks di kanannya */
+  margin-bottom: 25px;
+}
+
+
 /* FONTS */
 /* Main text */
 body {
     font-family: 'DM Sans', sans-serif;
+    background-color: #EAECE4;
 }
 /* Headings */
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
+    color: #34322b;
 }
 /* Logo */
 .logo {
     font-family: 'Playfair Display', serif;
 }
 /* Navigation */
-nav, h4 {
+nav, h4, li {
     font-family: 'DM Sans', sans-serif;
+    color: #363A32;
+}
+.sub-table {
+    font-size: 1vw;
+    color: #282e4b;
+}
+
+
+@media (max-width: 1220px)  {
+    .article-image {
+        max-width: 120px;
+        max-height: 75px;
+    }
+    h1, h2, h3 {
+        font-size: 2vw;
+    }
+    nav, h4, p, li {
+        font-size: 1.5vw;
+    }
+}
+@media (max-width: 620px) {
+    .table-of-contents{
+        /* color: red; */
+        width: 100px;
+    }
+    .article-layout {
+        grid-template-columns: 30vw 1fr;
+        gap: 0px;
+    }
+    .article-image {
+        max-width: 75px;
+        max-height: 40px;
+    }
+    .main-header {
+        height: 7vw;
+    }
 }
